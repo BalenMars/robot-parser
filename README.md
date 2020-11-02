@@ -1,4 +1,6 @@
-This simple Bash function can scan through robot files and grab specific sections from it, in this case the function returns test-case names, test-case traces and two versions of its documentation, one suitable for HP ALM system.
+This simple Bash function can scan through robot files and grab specific sections from it, 
+in this case the function returns test-case names, test-case traces and two versions of its 
+documentation, one suitable for HP ALM system.
 
 The function calles a LOGGER, which can be as simple as this:
 
