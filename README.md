@@ -8,6 +8,7 @@ LOGGER(){
 local data=$1
     local _timestamp
     read _timestamp < <(date +"%d/%M/%Y %T")
-    printf '%s\n' "[$\_timestamp] <${FUNCNAME[1]}()> $data" | tee -a ${path_where_script_running}/${logger_file}
+    printf '%s\n' "[$\_timestamp] <${FUNCNAME[1]}()> $data" \
+                   | tee -a ${path_where_script_running}/${logger_file}
 }
 ```
